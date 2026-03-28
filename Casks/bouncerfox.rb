@@ -3,34 +3,33 @@ cask "bouncerfox" do
   name "bouncerfox"
   desc "Scan AI agent config files for security and quality issues"
   homepage "https://github.com/bouncerfox/cli"
-  version "0.1.2"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "bouncerfox"
-  binary "bf"
 
   on_macos do
     on_intel do
       url "https://github.com/BouncerFox/cli/releases/download/v#{version}/bouncerfox_#{version}_darwin_amd64.tar.gz"
-      sha256 "39371b3e57c2f710a90ec35264fee39d5dcb2742a913b9a5b7fbf3e9a93e302c"
+      sha256 "da9b79787431d1cdae6806a1c80f5d3ec96637398c2aa19cc15afc832d3379e6"
     end
     on_arm do
       url "https://github.com/BouncerFox/cli/releases/download/v#{version}/bouncerfox_#{version}_darwin_arm64.tar.gz"
-      sha256 "2377caacd0d31426bf716fa3ef50cf9a33f84b1ee80044b0c9cd594bf840e003"
+      sha256 "27049f5c1de3a95e0a7f991cd6c1ce09a4ba7538c2adc6c05306c53a98b542b6"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/BouncerFox/cli/releases/download/v#{version}/bouncerfox_#{version}_linux_amd64.tar.gz"
-      sha256 "2f6b75d933bb9751d6e2a790d05e948f57778b2b013e9b83255f26b58f9bd250"
+      sha256 "7d88a5459ee3666ccff71537e829e8f5dc6ec834b78ec9de3367de5e19fa68b7"
     end
     on_arm do
       url "https://github.com/BouncerFox/cli/releases/download/v#{version}/bouncerfox_#{version}_linux_arm64.tar.gz"
-      sha256 "ce45aef2fc4163ec8f677ae42659e50cb4119c12640f5704b61e48bc9561342f"
+      sha256 "4d937d3c4c363a0d0cf9d91007ae0984fe81ddbb2c8125a5b712da07b94c0693"
     end
   end
 
